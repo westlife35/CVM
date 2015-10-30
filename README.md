@@ -7,7 +7,24 @@
 
 >Content
 
-> * Chapter 4
+> * Chapter 4 (Probability models)
+    * __curve fitting of normal distribution and category distribution__
+    * void MleNorm();
+    * void MapNorm();
+    * void ByNorm();
+    * void MleCat();
+    * void MapCat();
+    * void ByCat();
+    
+    
+> * Chapter 6 (Probability models)
+    * __character recognition__ 
+    * train image : 8422 images
+    * number of pattern : 10(0~9)
+    * feature : resize and equalize the image and use the pixels` number vecter as the feature directly
+    * pre-handle: resize and histogram equalization
+    * train accuracy: 94.775%(resize:15*9),93.7182%(3*6,faster)
+    
 
 ###Some Info
 

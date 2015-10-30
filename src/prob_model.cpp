@@ -174,7 +174,7 @@ namespace CVM{
 		double sum=0.0;
 		double sum2=0.0;
 		//int size=vec_normal_data.size();
-		int size=5;
+		int size=100;
 		for (int i=0;i<size;++i)
 		{
 			sum+=vec_normal_data_[i];

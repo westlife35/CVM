@@ -1,0 +1,10 @@
+------Read images and extract feature : start------
+------Read images and extract feature :  finish------
+Use Time:1.182173
+------Training :  start------
+------Training :  finish------
+Use Time:0.407849
+
+----<-The training accuracy->------
+93.7181%
+----<-The training accuracy->------
