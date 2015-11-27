@@ -8,6 +8,7 @@
 #include "prob_model.h"//chapter 4
 #include "class_gen_model.h"//chapter 6
 #include "em_model.h"//chapter 7
+#include "reg_model.h"//chapter 8
 
 int main(){
 	//chapter 4
@@ -41,7 +42,7 @@ int main(){
 	classGenModel.BasicGenNorm();*/
 
 	//chapter 7
-	CVM::EmModel emModel;
+	/*CVM::EmModel emModel;
 	std::vector<std::vector<double> > vec_orginal_mu;
 	vec_orginal_mu.resize(2);
 	vec_orginal_mu[0].push_back(-1);
@@ -58,7 +59,32 @@ int main(){
 	vec_normal_data.push_back(5000);
 	vec_normal_data.push_back(5000);
 	emModel.Init(vec_orginal_mu,vec_original_sig,vec_normal_data);
-	emModel.FitMoG();
+	emModel.FitMoG();*/
+
+	//chapter 8
+	CVM::RegModel regModel;
+	std::vector<std::vector<double> > vec_orginal_mu;
+	vec_orginal_mu.resize(3);
+	vec_orginal_mu[0].push_back(-3);
+	vec_orginal_mu[0].push_back(2);
+	vec_orginal_mu[1].push_back(0);
+	vec_orginal_mu[1].push_back(-3);
+	vec_orginal_mu[2].push_back(4);
+	vec_orginal_mu[2].push_back(3);
+	std::vector<std::vector<double> > vec_original_sig;
+	vec_original_sig.resize(3);
+	vec_original_sig[0].push_back(0.5);
+	vec_original_sig[0].push_back(0.5);
+	vec_original_sig[1].push_back(0.5);
+	vec_original_sig[1].push_back(0.5);
+	vec_original_sig[2].push_back(0.5);
+	vec_original_sig[2].push_back(0.5);
+	std::vector<int> vec_normal_data;
+	vec_normal_data.push_back(5);
+	vec_normal_data.push_back(5);
+	vec_normal_data.push_back(5);
+	regModel.Init(vec_orginal_mu,vec_original_sig,vec_normal_data);
+	regModel.GaussianProcessRegression(6,0.5);
 
     return 0;
 }

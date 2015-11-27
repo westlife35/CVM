@@ -28,6 +28,11 @@
     * __fitting of normal distribution with latent variance__ 
     * the sample use the independent normal distribution with dimension two and the total number of center is two which is easy to show in a coordinate.
     * there is also a comparision between the train data generated from the code matlab and the code cpp, and obviously the data from cpp code is pseudorandom, but it will not influence the result of the algorithm
+
+
+> * Chapter 8 (Regresion Model)
+    * accomplish the function of matrix computation by myself but it works not that efficiently
+    * do not find too much highlight of the algorithm and my teacher tells us it is not that widely used like SVM
     
 
 ###Some Info
