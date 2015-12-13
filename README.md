@@ -33,6 +33,10 @@
 > * Chapter 8 (Regresion Model)
     * accomplish the function of matrix computation by myself but it works not that efficiently
     * do not find too much highlight of the algorithm and my teacher tells us it is not that widely used like SVM
+
+> * Chapter 9 (Classification Model)
+    * accomplish the function of matrix computation by OpenCV which will run faster than my implementation
+    * accomplish the algorithm of 9.2
     
 
 ###Some Info

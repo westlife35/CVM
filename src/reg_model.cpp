@@ -2,7 +2,7 @@
 	> File Name: reg_model.cpp
 	> Author: CeQi
 	> Mail: qi_ce_0@163.com
-	> Created Time: Nov 24 Oct 2015 09:52:49 PM CST
+	> Created Time: Tus 24 Oct 2015 09:52:49 PM CST
  ************************************************************************/
 
 #include"reg_model.h"

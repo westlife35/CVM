@@ -2,7 +2,7 @@
 	> File Name: reg_model.h
 	> Author: CeQi
 	> Mail: qi_ce_0@163.com
-	> Created Time: Nov 24 Oct 2015 09:52:49 PM CST
+	> Created Time: Tue 24 Nov 2015 09:52:49 PM CST
  ************************************************************************/
 
 #ifndef _REG_MODEL_H

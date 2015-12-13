@@ -9,6 +9,8 @@
 #include "class_gen_model.h"//chapter 6
 #include "em_model.h"//chapter 7
 #include "reg_model.h"//chapter 8
+#include "classification_model.h"//chapter 9
+
 
 int main(){
 	//chapter 4
@@ -62,7 +64,7 @@ int main(){
 	emModel.FitMoG();*/
 
 	//chapter 8
-	CVM::RegModel regModel;
+	/*CVM::RegModel regModel;
 	std::vector<std::vector<double> > vec_orginal_mu;
 	vec_orginal_mu.resize(3);
 	vec_orginal_mu[0].push_back(-3);
@@ -84,7 +86,31 @@ int main(){
 	vec_normal_data.push_back(5);
 	vec_normal_data.push_back(5);
 	regModel.Init(vec_orginal_mu,vec_original_sig,vec_normal_data);
-	regModel.GaussianProcessRegression(6,0.5);
+	regModel.GaussianProcessRegression(6,0.5);*/
+
+	//chapter 9
+	CVM::ClassificationModel classificationModel;
+	std::vector<std::vector<double> > vec_orginal_mu;
+	vec_orginal_mu.resize(2);
+	vec_orginal_mu[0].push_back(-1);
+	vec_orginal_mu[0].push_back(2.5);
+	vec_orginal_mu[1].push_back(1);
+	vec_orginal_mu[1].push_back(-2.5);
+	std::vector<std::vector<double> > vec_original_sig;
+	vec_original_sig.resize(2);
+	vec_original_sig[0].push_back(0.5);
+	vec_original_sig[0].push_back(0.5);
+	vec_original_sig[1].push_back(0.5);
+	vec_original_sig[1].push_back(0.5);
+	std::vector<int> vec_normal_data;
+	vec_normal_data.push_back(20);
+	vec_normal_data.push_back(20);
+	classificationModel.Init(vec_orginal_mu,vec_original_sig,vec_normal_data);
+	vector<double> vec_initial_phi;
+	vec_initial_phi.push_back(1);
+	vec_initial_phi.push_back(1);
+	vec_initial_phi.push_back(1);
+	classificationModel.BayesianLogisticRegression(6,vec_initial_phi);
 
     return 0;
 }
